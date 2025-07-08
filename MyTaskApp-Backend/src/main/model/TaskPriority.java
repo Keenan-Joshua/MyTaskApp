@@ -1,3 +1,3 @@
 package main.model;
 
-public enum TaskPriority {LOW, MEDIUM, HIGH}
+public enum TaskPriority {low, medium, high}

@@ -384,7 +384,8 @@ function setupTaskManagerPage() {
                         'Content-Type': 'application/json',
                         'Authorization': `Bearer ${localStorage.getItem('token')}`
                     },
-                    body: JSON.stringify(newTask)
+                    body: JSON.stringify(newTask),
+                    credentials: 'include'
                 });
 
                 if (!response.ok) throw new Error('Failed to create task');
